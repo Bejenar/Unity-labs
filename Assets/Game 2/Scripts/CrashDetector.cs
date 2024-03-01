@@ -17,7 +17,7 @@ public class CrashDetector : MonoBehaviour
             FindObjectOfType<PlayerController>().DisableControls();
             crashEffect.Play();
             GetComponent<AudioSource>().PlayOneShot(crashSFX);
-            StartCoroutine(SceneController.ReloadSceneAfterDelay(1, delayTime));
+            StartCoroutine(LevelManager.ReloadSceneAfterDelay(1, delayTime));
         }
     }
 }

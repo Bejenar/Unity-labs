@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 namespace Game_2.Scripts
 {
-    public class SceneController
+    public class LevelManager
     {
         public static IEnumerator ReloadSceneAfterDelay(int index, float delay)
         {

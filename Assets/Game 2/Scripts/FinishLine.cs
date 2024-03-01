@@ -13,7 +13,7 @@ public class FinishLine : MonoBehaviour
             Debug.Log("Win");
             finishEffect.Play();
             GetComponent<AudioSource>().Play();
-            StartCoroutine(SceneController.ReloadSceneAfterDelay(1, delayTime));
+            StartCoroutine(LevelManager.ReloadSceneAfterDelay(1, delayTime));
         }
     }
 }
